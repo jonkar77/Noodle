@@ -10,14 +10,14 @@ export default function SearchHeader() {
     <header className='sticky top-0 bg-white'>
       <div className='flex w-full p-6 items-center justify-between'>
         <Link href='/'>
-          <Image
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png'
-            alt='Google Logo'
-            width={120}
-            height={40}
-            priority
-            style={{ width: 'auto' }}
-          />
+        <div className='flex justify-center text-[40px] font-medium'>
+          <div className='text-red-600 text-purple-700'>N</div>
+          <div  className='text-yellow-500'>o</div>
+          <div className='text-green-600'>o</div>
+          <div  className='text-red-600'>d</div>
+          <div className='text-yellow-500'>l</div>
+          <div  className='text-green-600'>e</div>
+        </div>
         </Link>
         <div className='flex-1'>
           <SearchBox />
