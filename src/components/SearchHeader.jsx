@@ -10,14 +10,15 @@ export default function SearchHeader() {
     <header className='sticky top-0 bg-white'>
       <div className='flex w-full p-6 items-center justify-between'>
         <Link href='/'>
-        <div className='flex justify-center text-[40px] font-medium'>
-          <div className='text-red-600 text-purple-700'>N</div>
-          <div  className='text-yellow-500'>o</div>
-          <div className='text-green-600'>o</div>
-          <div  className='text-red-600'>d</div>
-          <div className='text-yellow-500'>l</div>
-          <div  className='text-green-600'>e</div>
-        </div>
+          <div className='flex flex-row font-semibold'>
+            <div className='text-red-500 text-[34px]'>N</div>
+            <div className='text-yellow-500 text-[34px]'>O</div>
+            <div className='text-blue-500 text-[34px]'>O</div>
+            <div className='text-red-800 text-[34px]'>D</div>
+            <div className='text-yellow-800 text-[34px]'>L</div>
+            <div className='text-blue-800 text-[34px]'>E</div>
+          </div>
+
         </Link>
         <div className='flex-1'>
           <SearchBox />
@@ -30,7 +31,7 @@ export default function SearchHeader() {
           Sign in
         </button>
       </div>
-      <SearchHeaderOptions/>
+      <SearchHeaderOptions />
     </header>
   );
 }
